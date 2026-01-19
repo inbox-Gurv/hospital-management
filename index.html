@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarogya Care Multispeciality Hospital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header with logo, tagline, and navigation -->
+    <header class="main-header">
+    <div class="header-container">
+
+        <!-- Logo + Brand -->
+        <div class="brand">
+            <img src="images/logo.jpg" alt="Aarogya Care Logo" class="logo-jpg">
+            <div class="brand-text">
+                <h1>Aarogya Care Multispeciality Hospital</h1>
+                <p>Compassion. Care. Commitment.</p>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#contractors">Contractors</a></li>
+                <li><a href="#login" id="openLogin" class="nav-btn">Login</a></li>
+                <li><a href="#signup" id="openSignup" class="nav-btn signup">Signup</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+    <!-- ================= Login Modal ================= -->
+<div class="auth-modal" id="loginModal">
+  <div class="auth-box">
+    <span class="close-btn" id="closeLogin">&times;</span>
+
+    <h2>Login</h2>
+    <p class="form-subtitle">Access your account</p>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label>Email / Mobile</label>
+        <input type="text" required placeholder="Enter email or mobile">
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" required placeholder="Enter password">
+      </div>
+
+      <button type="submit" class="btn primary-btn">Login</button>
+
+      <p class="switch-text">
+        Don’t have an account?
+        <a href="#signup" id="switchToSignup">Sign Up</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- ================= Sign Up Modal ================= -->
+<div class="auth-modal" id="signupModal">
+  <div class="auth-box">
+    <span class="close-btn" id="closeSignup">&times;</span>
+
+    <h2>Create Account</h2>
+    <p class="form-subtitle">Register as Patient</p>
+
+    <form id="signupForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" required placeholder="Enter full name">
+      </div>
+
+      <div class="form-group">
+        <label>Mobile Number</label>
+        <input type="tel" required placeholder="10-digit mobile number">
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" required placeholder="example@email.com">
+      </div>
+
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" required placeholder="Create password">
+      </div>
+
+      <button type="submit" class="btn primary-btn">Sign Up</button>
+
+      <p class="switch-text">
+        Already have an account?
+        <a href="#" id="switchToLogin">Login</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero section with headline, description, and CTAs -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Aarogya Care</h2>
+                <p>Providing world-class healthcare services with a focus on patient-centered care, advanced technology, and compassionate treatment in Gaya, Bihar.</p>
+                <div class="cta-buttons">
+                    <a href="#appointments" class="btn primary">Book Appointment</a>
+                    <a href="#" class="btn emergency-btn" id="openEmergency">
+    🚑 Emergency Help
+</a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+    <section id="about" class="about">
+    <div class="container">
+        <div class="about-header">
+            <h2>About Aarogya Care</h2>
+            <p class="subtitle">
+                Trusted Multispeciality Healthcare in Bihar since 2010
+            </p>
+        </div>
+
+        <div class="about-main">
+            <div class="about-text">
+                <h3>Who We Are</h3>
+                <p>
+                    Aarogya Care Multispeciality Hospital is a modern healthcare institution
+                    located on Sherghati Road, Gaya, Bihar. For over <strong>13+ years</strong>,
+                    we have been delivering ethical, affordable, and advanced medical care
+                    to patients from Gaya and surrounding districts.
+                </p>
+
+                <p>
+                    Equipped with advanced diagnostic facilities, experienced doctors,
+                    and compassionate nursing staff, we ensure patient safety, comfort,
+                    and clinical excellence at every stage of treatment.
+                </p>
+
+                <ul class="about-points">
+                    <li>✔ 24×7 Emergency & Trauma Care</li>
+                    <li>✔ Experienced Multispeciality Doctors</li>
+                    <li>✔ Modern Operation Theatres & ICU</li>
+                    <li>✔ Patient-centric & Affordable Treatment</li>
+                </ul>
+            </div>
+
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h4>13+</h4>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h4>50+</h4>
+                    <p>Qualified Doctors</p>
+                </div>
+                <div class="stat-card">
+                    <h4>25k+</h4>
+                    <p>Happy Patients</p>
+                </div>
+                <div class="stat-card">
+                    <h4>24×7</h4>
+                    <p>Emergency Services</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>
+                    To provide accessible, affordable, and compassionate healthcare
+                    using modern technology while maintaining the highest ethical standards.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Our Vision</h3>
+                <p>
+                    To become Bihar’s most trusted multispeciality hospital,
+                    setting benchmarks in quality treatment and community healthcare.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Our Values</h3>
+                <p>
+                    Integrity, Empathy, Excellence, Innovation, and Respect for every life
+                    guide all our medical practices.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Departments section -->
+        <section id="departments" class="departments">
+    <div class="container">
+        <h2>Our Medical Specialties</h2>
+        <p class="section-subtitle">
+            Comprehensive healthcare services delivered by experienced specialists using modern technology.
+        </p>
+
+        <div class="departments-grid">
+            <div class="dept-card">
+                <div class="icon">❤️</div>
+                <h3>Cardiology</h3>
+                <p>Advanced diagnosis and treatment for heart and vascular diseases.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="icon">🦴</div>
+                <h3>Orthopedics</h3>
+                <p>Complete care for bones, joints, spine, and sports injuries.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="icon">🧠</div>
+                <h3>Neurology</h3>
+                <p>Expert care for brain, spine, nerve, and stroke-related conditions.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="icon">👶</div>
+                <h3>Pediatrics</h3>
+                <p>Compassionate healthcare for newborns, infants, and children.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="icon">🤰</div>
+                <h3>Gynecology & Obstetrics</h3>
+                <p>Complete women’s healthcare including pregnancy and maternity care.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="icon">🔬</div>
+                <h3>Pathology & Diagnostics</h3>
+                <p>Accurate lab tests and imaging for early and reliable diagnosis.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="icon">🩺</div>
+                <h3>General Medicine</h3>
+                <p>Primary care for fever, diabetes, BP, infections, and chronic diseases.</p>
+            </div>
+
+            <div class="dept-card">
+                <div class="icon">🔪</div>
+                <h3>General & Laparoscopic Surgery</h3>
+                <p>Safe and minimally invasive surgical treatments.</p>
+            </div>
+
+            <div class="dept-card emergency">
+                <div class="icon">🚑</div>
+                <h3>Emergency & Trauma Care</h3>
+                <p>24×7 emergency services with rapid response and ICU support.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Doctors section -->
+        <section id="doctors" class="doctors">
+    <div class="container">
+        <h2>Meet Our Expert Doctors</h2>
+        <p class="section-subtitle">Experienced specialists dedicated to your health</p>
+
+        <div class="doctors-grid">
+
+            <!-- Doctor Card -->
+                      <div class="doctor-card">
+                        <img src="images/doctor1.jpg" alt="Dr. Rajesh Kumar">
+                        <h3>Dr. Rajesh Kumar</h3>
+                        <span class="specialization">Cardiologist</span>
+                        <p><strong>Experience:</strong> 15 Years</p>
+                        <p><strong>OPD:</strong> Mon–Wed, 10 AM – 2 PM</p>
+                    </div>
+
+            <div class="doctor-card">
+                <img src="images/doctor2.jpg" alt="Dr. Priya Sharma">
+                <h3>Dr. Priya Sharma</h3>
+                <span class="specialization">Pediatrician</span>
+                <p><strong>Experience:</strong> 12 Years</p>
+                <p><strong>OPD:</strong> Tue–Fri, 9 AM – 1 PM</p>
+            </div>
+
+            <div class="doctor-card">
+                <img src="images/doctor3.jpg" alt="Dr. Anil Verma">
+                <h3>Dr. Anil Verma</h3>
+                <span class="specialization">Orthopedic Surgeon</span>
+                <p><strong>Experience:</strong> 10 Years</p>
+                <p><strong>OPD:</strong> Mon–Thu, 11 AM – 3 PM</p>
+            </div>
+
+            <div class="doctor-card">
+                <img src="images/doctor4.jpg" alt="Dr. Sunita Gupta">
+                <h3>Dr. Sunita Gupta</h3>
+                <span class="specialization">Neurologist</span>
+                <p><strong>Experience:</strong> 14 Years</p>
+                <p><strong>OPD:</strong> Wed–Sat, 10 AM – 4 PM</p>
+            </div>
+
+            <div class="doctor-card">
+                <img src="images/doctor5.jpg" alt="Dr. Amit Singh">
+                <h3>Dr. Amit Singh</h3>
+                <span class="specialization">General Physician</span>
+                <p><strong>Experience:</strong> 8 Years</p>
+                <p><strong>OPD:</strong> Mon–Sat, 9 AM – 5 PM</p>
+            </div>
+
+            <div class="doctor-card">
+                <img src="images/doctor6.jpg" alt="Dr. Neha Patel">
+                <h3>Dr. Neha Patel</h3>
+                <span class="specialization">Gynecologist</span>
+                <p><strong>Experience:</strong> 11 Years</p>
+                <p><strong>OPD:</strong> Tue–Sat, 10 AM – 2 PM</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+        <!-- Appointments section -->
+<!-- ================= Contractors Section ================= -->
+<section id="contractors" class="contractors">
+    <div class="container">
+        <h2>Our Contractors & Partners</h2>
+        <p class="section-intro">
+            Aarogya Care Multispeciality Hospital works with certified and experienced contractors 
+            to ensure quality healthcare services, infrastructure, technology, and patient support.
+        </p>
+
+        <div class="contractor-grid">
+
+            <!-- Clinical Contractors -->
+            <div class="contractor-card">
+                <div class="icon">🩺</div>
+                <h3>Clinical Contractors</h3>
+                <p>
+                    Responsible for providing specialized medical and clinical services
+                    under hospital guidelines.
+                </p>
+                <ul>
+                    <li>Diagnostic Labs (Pathology, Radiology)</li>
+                    <li>Dialysis Services</li>
+                    <li>Physiotherapy & Rehabilitation</li>
+                    <li>Nursing & Paramedical Staff</li>
+                    <li>Medical Equipment Operation</li>
+                </ul>
+            </div>
+
+            <!-- Construction Contractors -->
+            <div class="contractor-card">
+                <div class="icon">🏗️</div>
+                <h3>Construction Contractors</h3>
+                <p>
+                    Manage hospital infrastructure development and maintenance.
+                </p>
+                <ul>
+                    <li>Building Construction & Expansion</li>
+                    <li>Renovation of Wards & OPDs</li>
+                    <li>Electrical & Plumbing Work</li>
+                    <li>Fire Safety Systems</li>
+                    <li>HVAC & Oxygen Pipeline Systems</li>
+                </ul>
+            </div>
+
+            <!-- IT & Admin Contractors -->
+            <div class="contractor-card">
+                <div class="icon">💻</div>
+                <h3>IT & Admin Contractors</h3>
+                <p>
+                    Support hospital digital systems and administrative operations.
+                </p>
+                <ul>
+                    <li>Hospital Management Software (HMS)</li>
+                    <li>Website & App Development</li>
+                    <li>Network & Data Security</li>
+                    <li>Biometric & Attendance Systems</li>
+                    <li>Billing & ERP Support</li>
+                </ul>
+            </div>
+
+            <!-- Support Service Contractors -->
+            <div class="contractor-card">
+                <div class="icon">🧹</div>
+                <h3>Support Service Contractors</h3>
+                <p>
+                    Ensure smooth day-to-day hospital operations and patient comfort.
+                </p>
+                <ul>
+                    <li>Housekeeping & Sanitation</li>
+                    <li>Security Services</li>
+                    <li>Ambulance & Patient Transport</li>
+                    <li>Cafeteria & Food Services</li>
+                    <li>Biomedical Waste Management</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Contractor Work Policy -->
+        <div class="contractor-policy">
+            <h3>Contractor Work Guidelines</h3>
+            <ul>
+                <li>All contractors must follow hospital safety and hygiene protocols</li>
+                <li>Compliance with NABH & Government healthcare norms</li>
+                <li>Background verification of staff is mandatory</li>
+                <li>Strict confidentiality of patient data</li>
+                <li>Regular performance and quality audits</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= Contractor Enquiry Form ================= -->
+<div class="contractor-form-box">
+    <h3>Contractor Enquiry / Service Request</h3>
+    <p class="form-note">
+        Contractors interested in working with Aarogya Care may submit their details below.
+    </p>
+
+    <form id="contractorForm" class="contractor-form">
+
+        <div class="form-group">
+            <label for="contractor-name">Full Name / Company Name</label>
+            <input type="text" id="contractor-name" required placeholder="Enter name or company name">
+        </div>
+
+        <div class="form-group">
+            <label for="contractor-email">Email Address</label>
+            <input type="email" id="contractor-email" required placeholder="example@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="contractor-phone">Phone Number</label>
+            <input type="tel" id="contractor-phone" required placeholder="10 digit mobile number">
+        </div>
+
+        <div class="form-group">
+            <label for="service-type">Support Service</label>
+            <select id="service-type" required>
+                <option value="">Select Service Type</option>
+                <option>Clinical Services</option>
+                <option>Construction & Maintenance</option>
+                <option>IT & Admin Services</option>
+                <option>Housekeeping & Sanitation</option>
+                <option>Security Services</option>
+                <option>Ambulance / Transport</option>
+                <option>Biomedical Waste Management</option>
+                <option>Other Support Service</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="contractor-message">Your Message</label>
+            <textarea id="contractor-message" rows="4" required
+                placeholder="Briefly describe your service or proposal"></textarea>
+        </div>
+
+        <button type="submit" class="btn primary">
+            Submit Request
+        </button>
+    </form>
+</div>
+
+        <!-- Appointment Modal -->
+<!-- ================= Book Appointment Modal ================= -->
+<div class="appointment-modal" id="appointmentModal">
+  <div class="appointment-box">
+
+    <span class="close-btn" id="closeAppointment">&times;</span>
+
+    <h2>Book Your Appointment</h2>
+    <p class="form-subtitle">Fast & easy appointment booking</p>
+
+    <form id="appointmentForm" class="appointment-form">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="Patient Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Mobile Number</label>
+          <input type="tel" placeholder="10-digit mobile" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Age</label>
+          <input type="number" min="1" placeholder="Age" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select required>
+            <option value="">Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Department</label>
+          <select required>
+            <option value="">Choose Department</option>
+            <option>Cardiology</option>
+            <option>Orthopedics</option>
+            <option>Neurology</option>
+            <option>Pediatrics</option>
+            <option>General Medicine</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Doctor</label>
+          <select required>
+            <option value="">Choose Doctor</option>
+            <option>Dr. Rajesh Kumar</option>
+            <option>Dr. Priya Sharma</option>
+            <option>Dr. Anil Verma</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Preferred Date</label>
+        <input type="date" required>
+      </div>
+
+      <div class="form-group">
+        <label>Symptoms / Problem</label>
+        <textarea rows="3" placeholder="Optional message"></textarea>
+      </div>
+
+      <button type="submit" class="btn primary-btn">
+        Book Appointment
+      </button>
+
+    </form>
+  </div>
+</div>
+
+<!-- ================= Emergency Help Modal ================= -->
+<div class="emergency-modal" id="emergencyModal">
+    <div class="emergency-box">
+
+        <span class="close-btn" id="closeEmergency">&times;</span>
+
+        <h2>🚑 Emergency Help Request</h2>
+        <p class="form-subtitle">
+            Please fill details carefully. Our emergency team will contact you immediately.
+        </p>
+
+        <form id="emergencyForm">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Patient Name</label>
+                    <input type="text" required placeholder="Enter patient name">
+                </div>
+
+                <div class="form-group">
+                    <label>Mobile Number</label>
+                    <input type="tel" required placeholder="10-digit mobile number">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Age</label>
+                    <input type="number" min="0" required placeholder="Age">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select required>
+                        <option value="">Select</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Emergency Type</label>
+                <select required>
+                    <option value="">Select Emergency</option>
+                    <option>Accident / Trauma</option>
+                    <option>Heart Problem</option>
+                    <option>Breathing Difficulty</option>
+                    <option>High Fever</option>
+                    <option>Pregnancy Emergency</option>
+                    <option>Other Critical Condition</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Current Location / Address</label>
+                <textarea rows="2" required placeholder="Patient current location"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Additional Details</label>
+                <textarea rows="3" placeholder="Optional details"></textarea>
+            </div>
+
+            <button type="submit" class="btn emergency-submit">
+                🚑 Request Emergency Help
+            </button>
+
+        </form>
+    </div>
+</div>
+
+
+
+      <!-- Contact Section -->
+<!-- Top Contact Bar -->
+<!--<div class="top-bar">
+    <div class="top-bar-container">
+        <div class="top-contact">
+            <span>📞 +91 98765 43210</span>
+            <span>🚑 Emergency: +91 91234 56789</span>
+            <span>✉️ aarogyacare@gmail.com</span>
+        </div>
+        <div class="top-actions"></div>
+            <button class="top-btn emergency-btn" id="openContactModal">
+                Contact Us
+            </button>
+        </div>
+    </div>
+</div>-->
+
+ <header>
+    <!-- Top Contact Bar here -->
+
+    <div class="header-container">
+        <!-- logo + nav -->
+    </div>
+</header>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+
+        <!-- Emergency Badge -->
+        <div class="emergency-badge">
+            <i class="fas fa-ambulance"></i> Emergency: 24×7 Available
+        </div>
+
+        <div class="footer-grid">
+
+            <!-- Our Services (LEFT) -->
+            <div class="footer-section services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><i class="fas fa-heartbeat"></i> Emergency Care</li>
+                    <li><i class="fas fa-pills"></i> 24×7 Pharmacy</li>
+                    <li><i class="fas fa-flask"></i> Diagnostic Lab</li>
+                    <li><i class="fas fa-procedures"></i> Operation Theatre</li>
+                    <li><i class="fas fa-user-md"></i> ICU & NICU</li>
+                </ul>
+            </div>
+
+            <!-- Map (CENTER) -->
+            <div class="footer-section map">
+                <h4>Find Us</h4>
+                <iframe
+                    src="https://www.google.com/maps?q=Sherghati%20Road%20Gaya%20Bihar&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Hospital Info (RIGHT) -->
+            <div class="footer-section info">
+                <h3>Aarogya Care Multispeciality Hospital</h3>
+                <p>Compassion. Care. Commitment.</p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Sherghati Road, Gaya, Bihar – 824211
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> +91 98765 43210 <br>
+                    <i class="fas fa-envelope"></i> aarogyacare@gmail.com
+                </p>
+
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © <span id="year"></span> Aarogya Care Multispeciality Hospital. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
+    <script src="script.js"></script>
+
+
+
+</body>
+</html>
