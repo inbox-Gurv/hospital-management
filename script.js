@@ -181,3 +181,37 @@ window.onclick = (e) => {
     if (e.target === loginModal) loginModal.style.display = "none";
     if (e.target === signupModal) signupModal.style.display = "none";
 };
+
+const form = document.getElementById("reviewForm");
+const reviewList = document.getElementById("reviewList");
+const avgRatingEl = document.getElementById("avgRating");
+const totalReviewsEl = document.getElementById("totalReviews");
+
+let ratings = [5,4,5];
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const rating = Number(document.getElementById("rating").value);
+    const comment = document.getElementById("comment").value;
+
+    ratings.push(rating);
+
+    const stars = "★★★★★☆☆☆☆☆".slice(5-rating,10-rating);
+
+    const card = document.createElement("div");
+    card.className = "review-card";
+    card.innerHTML = `
+        <h4>${name}</h4>
+        <div class="stars">${stars}</div>
+        <p>${comment}</p>
+    `;
+    reviewList.appendChild(card);
+
+    const avg = (ratings.reduce((a,b)=>a+b,0)/ratings.length).toFixed(1);
+    avgRatingEl.textContent = avg;
+    totalReviewsEl.textContent = ratings.length;
+
+    form.reset();
+});
