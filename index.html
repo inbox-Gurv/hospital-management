@@ -591,66 +591,80 @@
 
     <!-- Footer -->
     <footer class="footer">
-    <div class="container">
+    <div class="footer-top">
+        <div class="container">
 
-        <!-- Emergency Badge -->
-        <div class="emergency-badge">
-            <i class="fas fa-ambulance"></i> Emergency: 24×7 Available
-        </div>
-
-        <div class="footer-grid">
-
-            <!-- Our Services (LEFT) -->
-            <div class="footer-section services">
-                <h4>Our Services</h4>
-                <ul>
-                    <li><i class="fas fa-heartbeat"></i> Emergency Care</li>
-                    <li><i class="fas fa-pills"></i> 24×7 Pharmacy</li>
-                    <li><i class="fas fa-flask"></i> Diagnostic Lab</li>
-                    <li><i class="fas fa-procedures"></i> Operation Theatre</li>
-                    <li><i class="fas fa-user-md"></i> ICU & NICU</li>
-                </ul>
+            <!-- Emergency Banner -->
+            <div class="emergency-strip">
+                <i class="fas fa-ambulance"></i>
+                <span>24×7 Emergency Services Available</span>
+                <a href="tel:+919876543210">Call Now</a>
             </div>
 
-            <!-- Map (CENTER) -->
-            <div class="footer-section map">
-                <h4>Find Us</h4>
-                <iframe
-                    src="https://www.google.com/maps?q=Sherghati%20Road%20Gaya%20Bihar&output=embed"
-                    loading="lazy">
-                </iframe>
-            </div>
+            <div class="footer-grid">
 
-            <!-- Hospital Info (RIGHT) -->
-            <div class="footer-section info">
-                <h3>Aarogya Care Multispeciality Hospital</h3>
-                <p>Compassion. Care. Commitment.</p>
-                <p><i class="fas fa-map-marker-alt"></i>Sherghati Road, Gaya, Bihar – 824211</p>
-                <p><i class="fas fa-phone"></i> +91 98765 43210 <br>
-                    <i class="fas fa-envelope"></i> aarogyacare@gmail.com
-</p>
-                <!-- Social Icons -->
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <!-- Services -->
+                <div class="footer-card">
+                    <h4>Our Services</h4>
+                    <ul class="service-list">
+                        <li><i class="fas fa-heartbeat"></i> Emergency Care</li>
+                        <li><i class="fas fa-pills"></i> 24×7 Pharmacy</li>
+                        <li><i class="fas fa-flask"></i> Diagnostic Lab</li>
+                        <li><i class="fas fa-procedures"></i> Operation Theatre</li>
+                        <li><i class="fas fa-user-md"></i> ICU & NICU</li>
+                    </ul>
                 </div>
+
+                <!-- Map -->
+                <div class="footer-card">
+                    <h4>Find Us</h4>
+                    <div class="map-box">
+                        <iframe
+                            src="https://www.google.com/maps?q=Sherghati%20Road%20Gaya%20Bihar&output=embed"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="footer-card">
+                    <h3>Aarogya Care</h3>
+                    <p class="tagline">Compassion. Care. Commitment.</p>
+
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Sherghati Road, Gaya, Bihar – 824211
+                    </p>
+
+                    <p>
+                        <i class="fas fa-phone"></i> +91 98765 43210<br>
+                        <i class="fas fa-envelope"></i> aarogyacare@gmail.com
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
             </div>
-
         </div>
+    </div>
 
-        <hr>
-
-        <p class="copyright">
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>
             © <span id="year"></span> Aarogya Care Multispeciality Hospital. All Rights Reserved.
         </p>
     </div>
 </footer>
 
 <script>
-document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 
 
 
