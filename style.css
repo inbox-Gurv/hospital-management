@@ -329,7 +329,7 @@ body{font-family:'Segoe UI',sans-serif;background:#f8f9fa;color:#333}
 }
 
 /* MAP */
-.map-section{text-align:center;padding:60px 20px;background:#fff}
+.map-section{text-align:center;padding:60px 20px;background:#ffffff}
 .map-section iframe{width:90%;height:350px;border-radius:12px;border:0}
 
 /* REVIEWS */
@@ -701,7 +701,7 @@ body{font-family:'Segoe UI',sans-serif;background:#f8f9fa;color:#333}
 
 /* Services Section */
 .services {
-    background-color: #e969be;
+    background-color: #59d7db;
     border-radius: 20px;
     padding: 10px 80px;
     margin-top: 2rem;
@@ -769,7 +769,7 @@ body{font-family:'Segoe UI',sans-serif;background:#f8f9fa;color:#333}
 }*/
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #caa8be, #5c5a4f);
+    background: linear-gradient(135deg, #4377d6, #1cb64f);
     color: #fff;
     padding: 50px 0 20px;
     font-family: 'Segoe UI', sans-serif;
